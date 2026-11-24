@@ -1,0 +1,14 @@
+:root { color-scheme: light dark; font: 100%/1.85 -apple-system, "Hiragino Sans", sans-serif; color: #203b39; background: #faf9f3; }
+* { box-sizing: border-box; }
+main { max-width: 44rem; margin: auto; padding: 3rem 1.4rem; }
+header { display: flex; align-items: center; gap: 1rem; font-weight: 700; }
+header img { border-radius: 18px; }
+h1 { font-size: clamp(1.65rem, 6vw, 2.4rem); line-height: 1.4; margin: 2.5rem 0 1.5rem; }
+h2 { margin: 2rem 0 .4rem; font-size: 1.2rem; }
+p { margin: .5rem 0; }
+a { color: #00685e; text-underline-offset: .2em; }
+footer { margin-top: 2.5rem; border-top: 1px solid #9bafa7; padding-top: 1rem; }
+@media (prefers-color-scheme: dark) {
+  :root { background: #132524; color: #edf3ec; }
+  a { color: #83dec9; }
+}
