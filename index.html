@@ -1,21 +1,92 @@
 <!doctype html>
 <html lang="ja">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>レールカルテット｜アプリサポート</title>
-<link rel="stylesheet" href="style.css">
-<main>
-  <header><img src="icon.png" width="72" height="72" alt=""><p>レールカルテット</p></header>
-  <h1>アプリサポート</h1>
-  <h2>線路のつなぎ方</h2>
-  <p>地図上で駅から別の駅まで指を動かすと線路が引けます。乗客のマークと同じマークの駅をつなぐと、列車が自動で運びます。途中の駅での乗り換えも自動です。</p>
-  <h2>運転席から眺めるには</h2>
-  <p>「増強」で路線を複線化し、走っている列車を選んで「運転席へ」を押してください。左上のミニマップで地図に戻れます。</p>
-  <h2>続きから遊ぶには</h2>
-  <p>運行は端末に自動保存されます。次に起動したらタイトルの「続きから」を選んでください。アプリを削除すると端末内の保存データも消去されます。</p>
-  <h2>お問い合わせ</h2>
-  <p>開発者の共通窓口で受け付けています。「レールカルテット」とお使いの機種、どの画面で起きたかをお知らせください。</p>
-  <p><a href="mailto:serpenternapp@gmail.com">serpenternapp@gmail.com</a></p>
-  <footer><a href="privacy.html">プライバシーポリシー</a></footer>
-</main>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f8ef">
+  <title>レールカルテット｜街が育つ鉄道パズル</title>
+  <meta name="description" content="4つのマークの駅を結んで、日本の11地方に自分の鉄道網を育てよう。iPhone・iPad向け鉄道パズル「レールカルテット」のゲーム画面、プレイ映像、遊び方をご紹介。">
+  <meta property="og:title" content="レールカルテット｜街が育つ鉄道パズル">
+  <meta property="og:description" content="指で駅を結んだら、運転席に乗って自分の街へ。実際のプレイ映像とスクリーンショットで紹介します。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://serpentern.github.io/rail-quartet-site/media/city-1500.webp">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="mast">
+    <div class="wrap mast-inner">
+      <a class="brand" href="./" aria-label="レールカルテット ホーム"><img src="icon.png" alt="" width="40" height="40"><span>レールカルテット</span></a>
+      <nav aria-label="メインメニュー"><a href="#film">映像</a><a href="#play">遊び方</a><a href="#support">サポート</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="category"><span class="tracks" aria-hidden="true"></span>iPhone・iPad 向け鉄道パズル</p>
+        <h1 id="hero-title">線路をひく。<br><em>街が育つ。</em></h1>
+        <p class="lede">ハートの住宅地から、スペードのオフィス街へ。<br class="wide">指で駅をつなぐと列車が走り、<br class="wide">人が集まる駅前に建物が増えていきます。</p>
+        <a class="button" href="#film"><span aria-hidden="true">▶</span> プレイ映像を見る</a>
+        <p class="availability">日本向け無料アプリ <span aria-hidden="true">／</span> 配信準備中</p>
+      </div>
+      <figure class="map-plate">
+        <a class="picture-link" href="media/network.webp" aria-label="関東の路線図のゲーム画面を拡大">
+          <img class="hero-map" src="media/city-1500.webp" srcset="media/city-760.webp 760w, media/city-1500.webp 1500w" sizes="(max-width: 760px) 95vw, (max-width: 1300px) 57vw, 715px" width="1500" height="944" fetchpriority="high" alt="関東の湾岸に広がる市街地。川を渡る六色の路線が記号の駅を結ぶ">
+          <span class="expand" aria-hidden="true">⤢</span>
+        </a>
+        <figcaption><span><i class="map-dot" aria-hidden="true"></i>関東地方<span class="caption-rule" aria-hidden="true"></span>発展した街の路線図</span><span class="en" lang="en">KANTO</span></figcaption>
+      </figure>
+    </section>
+    <section class="wrap movie" id="film" aria-labelledby="film-title">
+      <div class="movie-head">
+        <div><p class="kicker"><i aria-hidden="true"></i> プレイ映像</p><h2 id="film-title">この街を、運転席から。</h2></div>
+        <p class="duration">21秒 <span aria-hidden="true">／</span> 音声なし</p>
+      </div>
+      <figure>
+        <video controls playsinline preload="none" poster="media/film.webp" width="1024" height="576" aria-label="関東の街を走るレールカルテットのプレイ映像" aria-describedby="film-caption">
+          <source src="media/rail-quartet.mp4" type="video/mp4">
+          <a href="media/rail-quartet.mp4">プレイ映像を開く（MP4）</a>
+        </video>
+        <figcaption id="film-caption">上空から路線を見渡したあと、列車の運転席へ。ビルの間を抜け、隣の線路を走る列車とすれ違います。</figcaption>
+      </figure>
+    </section>
+    <section class="wrap section" id="play" aria-labelledby="play-title">
+      <p class="kicker"><i aria-hidden="true"></i> 遊び方</p>
+      <h2 id="play-title">次の一手は、駅で決まる。</h2>
+      <div class="gallery">
+        <figure>
+          <a class="picture-link" href="media/first-lines.webp" aria-label="駅をつないだゲーム画面を拡大"><img src="media/first-lines-detail.webp" loading="lazy" width="618" height="440" alt="中央の乗換駅から住宅地やオフィス街へ延びる色分けされた線路"><span class="expand" aria-hidden="true">⤢</span></a>
+          <figcaption><h3>駅と駅を、指でつなぐ。</h3><p>乗客が目指すのは、自分と同じマークの駅。路線を交わらせると、乗客は途中の駅で乗り換えます。</p></figcaption>
+        </figure>
+        <figure>
+          <a class="picture-link" href="media/upgrades.webp" aria-label="路線の増強画面を拡大"><img src="media/upgrades-detail.webp" loading="lazy" width="592" height="333" alt="赤い路線の設備画面。増発、増結、複線化の費用を比べられる"><span class="expand" aria-hidden="true">⤢</span></a>
+          <figcaption><h3>混んできたら、どうする？</h3><p>列車を増やすか、一度に乗れる人数を増やすか。ホームに並ぶマークを見ながら、運賃の使い道を選びます。</p></figcaption>
+        </figure>
+        <figure>
+          <a class="picture-link" href="media/cab.webp" aria-label="運転席から見たゲーム画面を拡大"><img src="media/cab-detail.webp" loading="lazy" width="660" height="371" alt="運転席から見たレールと駅。隣の線路にも列車が走る"><span class="expand" aria-hidden="true">⤢</span></a>
+          <figcaption><h3>自分の路線に、乗ってみる。</h3><p>複線化したら、列車を選んで運転席へ。さっき地図でつないだ駅が、今度は線路の先に見えてきます。</p></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="regions" aria-labelledby="region-title">
+      <div class="wrap region-layout">
+        <div><p class="kicker"><i aria-hidden="true"></i> ご当地の交通</p><h2 id="region-title">11の地方、<br>違う走り方。</h2><p class="region-intro">地形が変われば、駅の結び方も変わります。その土地ならではの乗り物を、いつもの鉄道網に加えてみましょう。</p></div>
+        <article class="vehicle"><div class="model"><img src="media/hokkaido.webp" width="242" height="164" loading="lazy" alt="白い車体に緑の帯が入った連絡バス"></div><p>北海道</p><h3>駅前連絡バス</h3><p>同じ岸にある駅どうしを小さなバスで往復。最大4台をどこに回すかはあなた次第。</p></article>
+        <article class="vehicle"><div class="model"><img src="media/okinawa.webp" width="160" height="103" loading="lazy" alt="赤い帯を巻いた銀色のモノレール車両"></div><p>沖縄</p><h3>島のモノレール</h3><p>街の上を走る6席のモノレール。鉄道とは別に2路線までつくれます。</p></article>
+      </div>
+    </section>
+    <section class="wrap section support" id="support" aria-labelledby="support-title">
+      <div><p class="kicker"><i aria-hidden="true"></i> アプリサポート</p><h2 id="support-title">よくある質問</h2></div>
+      <div class="answers">
+        <details><summary>線路はどうやって引きますか？</summary><p>地図上で出発駅に指を置き、そのまま別の駅まで動かして離します。列車は自動で走り始めます。</p></details>
+        <details><summary>運転席に乗るには？</summary><p>「増強」で路線を複線化し、走っている列車を選んで「運転席へ」を押してください。左上のミニマップから地図に戻れます。</p></details>
+        <details><summary>前回の続きから遊べますか？</summary><p>運行は端末に自動保存されます。タイトル画面の「続きから」を選んでください。アプリを削除すると、端末内の保存データも消去されます。</p></details>
+        <details><summary>開発者に問い合わせたい</summary><p>メールに「レールカルテット」、お使いの機種、状況がわかる画面や操作を書いてお送りください。<br><a href="mailto:serpenternapp@gmail.com">serpenternapp@gmail.com</a></p></details>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><span>レールカルテット</span><a href="privacy.html">プライバシーポリシー</a></div></footer>
+</body>
 </html>
